@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "AvenirRegular";
+  src: url("../assets/fonts/AvenirNextLTPro-Regular.otf"), url("../assets/fonts/AvenirNextLTPro.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "AvenirBold";
+  src: url("../assets/fonts/AvenirNextLTPro-Demo.otf"), url("../assets/fonts/AvenirNextLTProBold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "AvenirDemi";
+  src: url("../assets/fonts/AvenirNextLTPro-Demi"), url("../assets/fonts/AvenirNextLTProDemi.ttf");
+  font-weight: 600;
+}
+/*.site-title {
+
+    @media screen and (min-width: $bp-mobile-min) and (max-width: $bp-mobile-max) {
+
+    }
+
+
+    @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+
+    }
+
+    @media screen and (min-width: $bp-desktop-min) and (max-width: $bp-desktop-max) {
+
+    }
+
+}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: #323232;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 1rem 0 1rem;
+}
+header .header-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header .header-container .site-logo {
+  height: 1.25rem;
+  width: 7.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+.navbar__tab {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  border-bottom: 0.3125rem solid transparent;
+}
+.navbar__tab a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: AvenirRegular;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar__tab:hover {
+  border-bottom: 0.3125rem solid white;
+}
+.navbar__link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: AvenirDemi;
+  font-weight: 600;
+}
+
+.hero-image {
+  background-image: url("../assets/images/hero-bio.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25vh;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 1rem;
+}
+.hero-image__title {
+  color: #FFFFFF;
+  font-family: AvenirDemi;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}/*# sourceMappingURL=bio.css.map */

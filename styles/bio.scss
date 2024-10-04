@@ -1,0 +1,111 @@
+@use './partials/breakpoints.scss' as *;
+@use './partials/fonts.scss' as *;
+@use './partials/variables.scss' as *;
+
+/*.site-title {
+
+    @media screen and (min-width: $bp-mobile-min) and (max-width: $bp-mobile-max) {
+
+    }
+
+
+    @media screen and (min-width: $bp-tablet-min) and (max-width: $bp-tablet-max) {
+
+    }
+
+    @media screen and (min-width: $bp-desktop-min) and (max-width: $bp-desktop-max) {
+
+    }
+
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background: $bs-black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+
+    .header-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .site-logo {
+            height: 1.25rem;
+            width: 7.5rem;
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0.5rem 1rem;
+
+    &__tab {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        border-bottom: 0.3125rem solid transparent;
+        
+        a {
+            color: $white;
+            text-decoration: none;
+            font-family: AvenirRegular;
+            font-weight: 600;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &:hover {
+            border-bottom: .3125rem solid white;
+        }
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+        font-family: AvenirDemi;
+        font-weight: 600;
+    }
+}
+
+.hero-image {
+    background-image: url('../assets/images/hero-bio.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 25vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 1rem;
+
+    &__title {
+        color: $white;
+        font-family: AvenirDemi;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2rem;
+
+    }
+
+
+}
+
+
