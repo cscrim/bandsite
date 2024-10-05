@@ -32,16 +32,45 @@ header {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1.5rem 1rem 0 1rem;
+
+    .site-logo__container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+    }
 
     .header-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         width: 100%;
+        padding-bottom: 0.5rem;
 
         .site-logo {
             height: 1.25rem;
             width: 7.5rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        .header-container {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .site-logo__container {
+            justify-content: flex-start;
+            margin: 0 2rem 0 1rem;
+        }
+
+        .navbar {
+            justify-content: flex-start;
+            gap: 3rem;
         }
     }
 }
@@ -103,6 +132,7 @@ header {
         font-size: 2rem;
         line-height: 2rem;
         padding-left: 0.5rem;
+        letter-spacing: .0625rem;
     }
 }
 
@@ -114,6 +144,9 @@ header {
     font-family: AvenirDemi;
     font-weight: 600;
     color: $bs-black;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: .0625rem;
 }
 
 .about__image-container {
@@ -133,7 +166,11 @@ header {
 
 .about__quote-container p {
     font-family: AvenirDemi;
+    font-weight: 600;
     color: $bs-black;
+    font-size: .875rem;
+    line-height: 1.375rem;
+    padding-bottom: 0.5rem;
 }
 
 .article__title-container {
@@ -141,8 +178,11 @@ header {
 }
 
 .article-title  {
-    font-family: AvenirRegular;
-    font-weight: 400;
+    font-family: AvenirDemi;
+    font-weight: 600;
+    font-size: .875rem;
+    line-height: 1.375rem;
+    
 }
 
 .paragraph-container {
@@ -164,8 +204,13 @@ header {
 }
 
 .gallery__title {
-    font-family: AvenirRegular;
-    font-weight: 400
+    font-family: AvenirDemi;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: .0625rem;
+    
+    
 }
 
 .gallery__image-container {
@@ -190,10 +235,11 @@ footer {
 
 .footer-title {
     color: $white;
-    font-family: AvenirBold;
-    font-weight: 700;
+    font-family: AvenirDemi;
+    font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
+    letter-spacing: .0625rem;
 }
 
 .footer-socials__wrapper {
@@ -280,3 +326,22 @@ footer {
     line-height: 1.125rem;
     padding-bottom: 2rem;
 }
+
+/*@media (min-width: 768px) {
+
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .site-logo__container {
+        justify-content: flex-start;
+    }
+
+    .navbar {
+        justify-content: space-around;
+
+    }
+
+}*/
