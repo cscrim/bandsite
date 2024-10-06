@@ -37,7 +37,7 @@ header {
         }
     }
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
@@ -118,7 +118,7 @@ header {
         padding-left: 0.5rem;
         letter-spacing: .0625rem;
 
-        @media (min-width: 768px) {
+        @media (min-width: $bp-tablet-min) {
             font-size: 3.75rem;
             line-height: 4.25rem;
         }
@@ -154,7 +154,7 @@ header {
     overflow: hidden;
     padding: 0 1rem 1rem 1rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         padding: 1rem 2rem 2rem 2rem;
     }
 }
@@ -162,7 +162,7 @@ header {
 .about-image {
     max-width: 100%;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         max-width: 80%;
     }
 }
@@ -180,7 +180,7 @@ header {
     padding-bottom: 0.5rem;
     display: flex;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         width: 78%;
         margin: 0 auto;
         font-size: 1.5rem;
@@ -190,7 +190,7 @@ header {
 }
 
 .about__quote-container .quote-text {
-    @media (min-width:768px) {
+    @media (min-width:$bp-tablet-min) {
         font-size: 2.25rem;
         line-height: 2.75rem;
         padding-bottom: 1rem;
@@ -201,8 +201,12 @@ header {
 .article__title-container {
     padding: 0 1rem 1rem 1rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         padding-left: 3rem;
+    }
+
+    @media (min-width: $bp-desktop-min) {
+        margin: 0 7rem;
     }
 }
 
@@ -212,11 +216,12 @@ header {
     font-size: .875rem;
     line-height: 1.375rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         font-size: 2.25rem;
         line-height: 2.75rem;
         padding-bottom: 1.5rem;
     } 
+
 }
 
 .paragraph-container {
@@ -224,7 +229,7 @@ header {
     display: flex;
     flex-direction: column;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
@@ -235,6 +240,20 @@ header {
             padding-bottom: 2rem;
         }
     }
+
+    @media (min-width: $bp-desktop-min) {
+        justify-content: center;
+
+        .paragraph1 {
+            padding-left: 3rem;
+            width: 40%;
+        }
+
+        .paragraph2 {
+            padding-right: 3rem;
+            width: 40%;
+        }
+    }
 }
 
 .paragraph1, .paragraph2 {
@@ -242,7 +261,7 @@ header {
     font-family: AvenirRegular;
     font-weight: 400;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         font-size: .875rem;
         line-height: 1.375rem;
     }
@@ -268,11 +287,15 @@ header {
     line-height: 2rem;
     letter-spacing: .0625rem;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         font-size: 2.25rem;
         line-height: 2.75rem;
         padding-top: 1rem;
         margin-left: 1rem;
+    }
+
+    @media (min-width: $bp-desktop-min) {
+        margin-left: 3rem;
     }
 }
 
@@ -283,7 +306,7 @@ header {
     gap: 1.5rem;
     justify-content: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -293,6 +316,11 @@ header {
             width: calc(33.3% - 1rem);
         }
     }
+
+    @media (min-width: $bp-desktop-min) {
+        margin: 0 3.9375rem;
+    }
+
 }
 
 .gallery-img {
@@ -314,11 +342,16 @@ footer {
         flex-direction: column;
         padding: 2rem 1rem 1rem 1rem;
 
-        @media (min-width: 768px) {
+        @media (min-width: $bp-tablet-min) {
             flex-direction: row;
             justify-content: flex-start;
             align-items: center;
             width: 100%;
+            padding: 0 1rem 1rem 1rem;
+        }
+
+        @media (min-width: $bp-desktop-min) {
+            padding-left: 4rem;
         }
     }
 
@@ -330,7 +363,7 @@ footer {
         line-height: 2rem;
         letter-spacing: .0625rem;
 
-        @media (min-width:768px) {
+        @media (min-width:$bp-tablet-min) {
             margin-right: 3rem;
             font-size: 2.25rem;
             line-height: 2.75rem;
@@ -340,12 +373,13 @@ footer {
     .footer-socials__wrapper {
         display: flex;
         padding: 2rem 0;
-        
-        justify-content: space-between;
+        justify-content: flex-start;
+        gap: 2rem;
 
-        @media (min-width: 768px) {
-            justify-content: space-around;
+        @media (min-width: $bp-tablet-min) {
+            justify-content: flex-start;
             width: 60%;
+            padding-right: 1rem;
         }
     }
 
@@ -359,11 +393,18 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        padding-left: 1rem;
 
-        @media (min-width: 768px) {
+        @media (min-width: $bp-tablet-min) {
             flex-direction: row;
             justify-content: space-between;
             margin: 0 1rem;
+        }
+
+        @media (min-width: $bp-desktop-min) {
+            justify-content: center;
+            width: 60%;
+            gap: 4rem;
         }
     }
 
@@ -387,12 +428,13 @@ footer {
 
     .copyright-container {
         margin-top: 2rem;
-        padding: 0 1rem;
+        padding-left: 2rem;
+
 
         .copyright-logo {
             margin: 1rem 0;
 
-            @media (min-width: 768px) {
+            @media (min-width: $bp-tablet-min) {
                 display: none;
             }
 
@@ -407,8 +449,12 @@ footer {
         line-height: 1.125rem;
         padding-bottom: 2rem;
 
-        @media (min-width: 768px) {
+        @media (min-width: $bp-tablet-min) {
             padding-left: 1rem;
+        }
+
+        @media (min-width: $bp-desktop-min) {
+            padding-left: 4rem;
         }
     }
 }
@@ -416,9 +462,14 @@ footer {
 .td-copyright {
     display: none;
 
-    @media (min-width: 768px) {
+    @media (min-width: $bp-tablet-min) {
         display: flex;
         align-items: center;
+        margin-left: auto;
+    }
+
+    @media (min-width: $bp-desktop-min) {
+        padding-left: 4rem;
     }
 }
 
