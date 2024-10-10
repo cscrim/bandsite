@@ -481,4 +481,146 @@ footer .copyright-text {
   .td-copyright {
     padding-left: 4rem;
   }
+}
+
+.comments__title {
+  font-family: AvenirDemi;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: 0.0625rem;
+}
+@media (min-width: 768px) {
+  .comments__title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    padding-top: 1rem;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .comments__title {
+    margin-left: 3rem;
+  }
+}
+
+.comments__title-container {
+  padding: 1rem 1rem 2rem 1rem;
+}
+@media (min-width: 768px) {
+  .comments__title-container {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+
+.comments__form-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.comments__form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.comments__form-container label {
+  font-family: AvenirDemi;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  color: #AFAFAF;
+  margin-bottom: 0.5rem;
+}
+
+.comments__form-container button {
+  margin-top: 2rem;
+}
+
+.comments__form-container input {
+  height: 2.5rem;
+  font-family: AvenirRegular;
+  background-color: #FAFAFA;
+  padding-left: 0.5rem;
+  color: #323232;
+  margin-bottom: 1.5rem;
+  border: 1px solid #E1E1E1;
+  border-radius: 0.25rem;
+}
+
+.comments__form-container #commentInput {
+  height: 7rem;
+  font-family: AvenirRegular;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+  background-color: #FAFAFA;
+  color: #323232;
+  border: 1px solid #E1E1E1;
+  border-radius: 0.25rem;
+}
+
+button {
+  background-color: #323232;
+  color: #FFFFFF;
+  width: 100%;
+  padding: 0.75rem 0;
+  border-radius: 0.3125rem;
+  margin-left: auto;
+  font-family: AvenirDemi;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.comments__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.comments__container div {
+  margin-bottom: 1rem;
+  padding: 0 0.625rem;
+}
+
+.comments__container span {
+  font-weight: 600;
+  font-family: AvenirDemi;
+  color: #323232;
+}
+
+.comments__container p {
+  font-family: AvenirRegular;
+  font-weight: 400;
+}
+
+.divider {
+  height: 0.0625rem;
+  background-color: #E1E1E1;
+  width: 100%;
+  margin: 0.625rem 0;
+}
+
+.pic-placeholder {
+  width: 2em;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #E1E1E1;
+  margin-right: 3rem;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.individual-comment {
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
 }/*# sourceMappingURL=bio.css.map */
