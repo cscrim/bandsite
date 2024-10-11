@@ -24,9 +24,15 @@ function renderComments() {
     const commentsContainer = document.querySelector('.comments__container');
     commentsContainer.innerHTML = " ";
 
-    for (let i=0; i < commentsArray.length; i++) {
-        displayComment(commentsArray[i]);
-    }
+    commentsArray.forEach(comment => {
+        displayComment(comment);
+    });
+
+    //for (let i=0; i < commentsArray.length; i++) {
+        //displayComment(commentsArray[i]);
+        // const card = to the comments array[i]
+        // commentsContainer.appendChild()
+    //}
 }
 
 renderComments();
@@ -70,43 +76,41 @@ function displayComment (myComment) {
     const commentsContainer = document.querySelector('.comments__container');
 
     const individualComment = document.createElement('div');
-    individualComment.className = 'individual-comment';
+    individualComment.classList.add('individual-comment');
 
     const profilePic = document.createElement('div');
-    profilePic.className = 'pic-placeholder';
-
-    const textContainer = document.createElement('div');
-    textContainer.className = "text-container";
-
-    const nameElement = document.createElement('span');
-    nameElement.textContent = myComment.name;
-
-    const timestampElement = document.createElement('span');
-    // timestampElement.textContent = myComment.timestamp
-
-    const textElement = document.createElement('p');
-    textElement.textContent = myComment.text;
-
+    profilePic.classList.add("pic-placeholder");
     
 
-    textContainer.appendChild(nameElement);
-    textContainer.appendChild(textElement);
+    const textContainer = document.createElement('div');
+    textContainer.classList.add("text-container");
+
+    const nameElement = document.createElement('span');
+    nameElement.innerText = myComment.name;
+
+    //const timestampElement = document.createElement('span');
+    // timestampElement.textContent = myComment.timestamp
+
+
+    const textElement = document.createElement('p');
+    textElement.innerText = myComment.text;
+
+    
+    
+
     
     individualComment.appendChild(profilePic);
 
+    textContainer.appendChild(nameElement);
+    textContainer.appendChild(textElement);
+
     individualComment.appendChild(textContainer)
 
-    //individualComment.appendChild(nameElement);
+    
     //individualComment.appendChild(timestampElement);
-    //individualComment.appendChild(textElement);
-
-    const divider = document.createElement('div');
-
-    //individualComment.appendChild(textContainer);
-
-    divider.classList.add('divider');
-    individualComment.appendChild(divider);
+    
 
     commentsContainer.appendChild(individualComment);
 
 }
+

@@ -2,3 +2,293 @@
 @use './partials/fonts.scss' as *;
 @use './partials/variables.scss' as *;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background: $bs-black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 1rem 0 1rem;
+
+    .site-logo__container {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 0.5rem;
+    }
+
+    .header-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 0.5rem;
+
+        .site-logo {
+            height: 1.25rem;
+            width: 7.5rem;
+        }
+    }
+
+    @media (min-width: $bp-tablet-min) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        .header-container {
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .site-logo__container {
+            justify-content: flex-start;
+            margin: 0 2rem 0 1rem;
+        }
+
+        .navbar {
+            justify-content: flex-start;
+            gap: 3rem;
+        }
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0.5rem 1rem;
+
+    &__tab {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        border-bottom: 0.3125rem solid transparent;
+        
+        a {
+            color: $white;
+            text-decoration: none;
+            font-family: AvenirRegular;
+            font-weight: 600;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &:hover {
+            border-bottom: 2px solid white;
+        }
+    }
+
+    &__link {
+        color: $white;
+        text-decoration: none;
+        font-family: AvenirDemi;
+        font-weight: 600;
+    }
+}
+
+.hero-image {
+    background-image: url('../assets/images/hero-shows.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 35vh;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    //align-items: center;
+    padding: 0 1rem;
+
+    &__album {
+        color: $white;
+        font-family: AvenirRegular;
+        font-size: 1.5rem;
+        font-weight: 400;
+        padding-left: 0.5rem;
+        margin: 2.5rem 0;
+    }
+
+    &__title {
+        color: $white;
+        font-family: AvenirDemi;
+        font-weight: 600;
+        font-size: 2rem;
+        line-height: 2rem;
+        padding-left: 0.5rem;
+        letter-spacing: .09rem;
+        width: 65%;
+        margin-bottom: 2rem;
+
+        @media (min-width: $bp-tablet-min) {
+            font-size: 3.75rem;
+            line-height: 4.25rem;
+        }
+    }
+}
+
+.soundcloud-container {
+    padding-left: 0.5rem;
+}
+
+.shows {
+    font-family: AvenirDemi;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin: 2rem 0 2rem 1rem;
+}
+
+footer {
+    background: $bs-black;
+
+    .footer__title-container {
+        padding: 2rem 1rem 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .footer__wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 1rem 1rem 1rem;
+
+        @media (min-width: $bp-tablet-min) {
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding: 0 1rem 1rem 1rem;
+        }
+
+        @media (min-width: $bp-desktop-min) {
+            padding-left: 4rem;
+        }
+    }
+
+    .footer-title {
+        color: $white;
+        font-family: AvenirDemi;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: .0625rem;
+
+        @media (min-width:$bp-tablet-min) {
+            margin-right: 3rem;
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+        }
+    }
+
+    .footer-socials__wrapper {
+        display: flex;
+        padding: 2rem 0;
+        justify-content: flex-start;
+        gap: 2rem;
+
+        @media (min-width: $bp-tablet-min) {
+            justify-content: flex-start;
+            width: 60%;
+            padding-right: 1rem;
+        }
+    }
+
+    .social-logo {
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+    }
+
+    .footer__contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding-left: 1rem;
+
+        @media (min-width: $bp-tablet-min) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 1rem;
+        }
+
+        @media (min-width: $bp-desktop-min) {
+            justify-content: center;
+            width: 60%;
+            gap: 4rem;
+        }
+    }
+
+    .contact__mgmt,
+    .contact__booking-LAG,
+    .contact__booking-ARCH {
+        color: $white;
+        font-family: AvenirRegular;
+        font-weight: 400;
+        font-size: .8125rem;
+        line-height: 1.125rem;
+
+        h3 {
+            margin-bottom: 1rem;
+        }
+
+        p:last-of-type {
+            margin-top: 0.625rem;
+        }
+    }
+
+    .copyright-container {
+        margin-top: 2rem;
+        padding-left: 2rem;
+
+
+        .copyright-logo {
+            margin: 1rem 0;
+
+            @media (min-width: $bp-tablet-min) {
+                display: none;
+            }
+
+        }
+    }
+
+    .copyright-text {
+        color: $white;
+        font-family: AvenirRegular;
+        font-weight: 400;
+        font-size: .8125rem;
+        line-height: 1.125rem;
+        padding-bottom: 2rem;
+
+        @media (min-width: $bp-tablet-min) {
+            padding-left: 1rem;
+        }
+
+        @media (min-width: $bp-desktop-min) {
+            padding-left: 4rem;
+        }
+    }
+}
+
+.td-copyright {
+    display: none;
+
+    @media (min-width: $bp-tablet-min) {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    @media (min-width: $bp-desktop-min) {
+        padding-left: 4rem;
+    }
+}

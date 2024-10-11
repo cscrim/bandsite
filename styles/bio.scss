@@ -570,7 +570,6 @@ button {
 .comments__container {
     display: flex;
     flex-direction: column;
-    //width: 100%;
 }
 
 .comments__container div {
@@ -585,42 +584,38 @@ button {
 }
 
 .comments__container p {
-    //margin-top: 1rem;
     font-family: AvenirRegular;
     font-weight: 400;
-
 }
 
-.divider {
-    height: .0625rem;
-    background-color: $mercury;
-    width: 100%;
-    margin: .625rem 0;
-}
 
 .pic-placeholder {
-    width: 2em;
-    height: 2rem;
+    width:3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: $mercury;
-    //display: inline-block;
-    margin-right: 3rem;
-    align-items: center;
-    padding-top: 2rem;
+    display: flex;
+    margin: 0 1rem;
+    align-self: start;
+    justify-content: center;
 }
+
 
 .individual-comment {
     display: flex;
-    width: 100%;
-    margin-bottom: 1rem;
-    
-    
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid $mercury;
+    align-items: flex-start;
 }
 
 .text-container {
     display:flex;
     flex-direction: column;
     padding-top: 2rem;
-    
+    margin-bottom: 0;
+    //margin-left: 2rem;
+    width: 80%;
 }
+
 
