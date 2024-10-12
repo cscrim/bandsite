@@ -38,6 +38,11 @@ showsArray.forEach(show => {
     const showContainer = document.createElement('div');
     showContainer.classList.add('show__container');
 
+
+
+    const dateBlock = document.createElement('div');
+    dateBlock.classList.add('block');
+
     const dateLabel = document.createElement('div');
     dateLabel.classList.add('label');
     dateLabel.innerText = "DATE";
@@ -45,6 +50,14 @@ showsArray.forEach(show => {
     const dateValue = document.createElement('div');
     dateValue.classList.add('date-value');
     dateValue.innerText = show.date;
+
+    dateBlock.appendChild(dateLabel);
+    dateBlock.appendChild(dateValue);
+
+
+
+    const venueBlock = document.createElement('div');
+    venueBlock.classList.add('block');
 
     const venueLabel = document.createElement('div');
     venueLabel.classList.add('label');
@@ -54,6 +67,13 @@ showsArray.forEach(show => {
     venueValue.classList.add('venue-value');
     venueValue.innerText = show.venue;
 
+    venueBlock.appendChild(venueLabel);
+    venueBlock.appendChild(venueValue);
+
+
+    const locationBlock = document.createElement('div');
+    locationBlock.classList.add('block');
+
     const locationLabel = document.createElement('div');
     locationLabel.classList.add('label');
     locationLabel.innerText = "LOCATION";
@@ -62,22 +82,31 @@ showsArray.forEach(show => {
     locationValue.classList.add('location-value');
     locationValue.innerText = show.location;
 
+    locationBlock.appendChild(locationLabel);
+    locationBlock.appendChild(locationValue);
+
     const button = document.createElement('button');
     button.classList.add('button');
     button.innerText = "BUY TICKETS";
 
+    
+
+
+
+    // showContainer.appendChild(dateLabel);
+    // showContainer.appendChild(dateValue);
+    // showContainer.appendChild(venueLabel);
+    // showContainer.appendChild(venueValue);
+    showContainer.appendChild(dateBlock);
+    showContainer.appendChild(venueBlock);
+    showContainer.appendChild(locationBlock);
+    // showContainer.appendChild(locationLabel);
+    // showContainer.appendChild(locationValue);
+    showContainer.appendChild(button);
+
+
     const dividerLine = document.createElement('div');
     dividerLine.classList.add('divider');
-
-
-
-    showContainer.appendChild(dateLabel);
-    showContainer.appendChild(dateValue);
-    showContainer.appendChild(venueLabel);
-    showContainer.appendChild(venueValue);
-    showContainer.appendChild(locationLabel);
-    showContainer.appendChild(locationValue);
-    showContainer.appendChild(button);
     showContainer.appendChild(dividerLine);
 
     getShows.appendChild(showContainer);

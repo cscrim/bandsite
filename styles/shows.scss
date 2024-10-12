@@ -101,7 +101,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 35vh;
+    min-height: 35vh;
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -112,6 +112,8 @@ header {
     }
 
     &__text-container {
+        
+
         @media (min-width: $bp-tablet-min) {
             padding-left: 2rem;
         }
@@ -156,17 +158,26 @@ header {
 
 .soundcloud-container {
     padding-left: 0.5rem;
+    position: absolute;
+    width: 80%;
 
     @media (min-width: $bp-tablet-min) {
         width: 65%;
         padding-top: 2rem;
-        //height: 15rem;
+    }
 
-        // iframe {
-        //     height: 14rem;
-            
-        // }
+    iframe {
+        width: 100%;
+        height: 10.375rem;
+        border: none;
+    }
+}
 
+.shows__wrapper {
+    @media (min-width: $bp-desktop-min) {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 3rem;
         
     }
 }
@@ -176,18 +187,52 @@ header {
     font-weight: 600;
     font-size: 2.25rem;
     line-height: 2.75rem;
-    margin: 2rem 0 2rem 1rem;
+    margin: 2rem 0 2rem 2rem;
 
     @media (min-width: $bp-tablet-min) {
         padding-left: 2rem;
         font-size: 2.75rem;
         line-height: 3.25rem;
     }
+
+    @media (min-width: $bp-desktop-min) {
+        text-align: left;
+        //margin-right: 40%;
+    }
+}
+
+.shows__container {
+    @media (min-width: $bp-desktop-min) {
+        width: 70%;
+        margin-left: auto;
+        margin-right: 4rem;
+        //flex-basis: 70%;
+    }
 }
 
 .show__container {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $bp-tablet-min) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 1rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid $mercury;
+    }
+}
+
+.block {
+    @media (min-width: $bp-tablet-min) {
+        flex: 1;
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .label {
@@ -196,8 +241,19 @@ header {
     color: $silver;
     font-size: 1rem;
     line-height: 1.375rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-bottom: 0.5rem;
+
+    @media (min-width: $bp-tablet-min) {
+        display: none;
+        padding-bottom: 2rem;
+    }
+}
+
+.show__container:first-child .label {
+    @media (min-width: $bp-tablet-min) {
+        display: block;
+    }
 }
 
 .date-value {
@@ -206,7 +262,7 @@ header {
     color: $bs-black;
     font-size: 1.125rem;
     line-height: 1.5rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -216,7 +272,7 @@ header {
     color: $bs-darkblack;
     font-size: 1.125rem;
     line-height: 1.5rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-bottom: 1rem;
 }
 
@@ -226,20 +282,26 @@ header {
     color: $bs-darkblack;
     font-size: 1.125rem;
     line-height: 1.5rem;
-    padding-left: 1rem;
+    padding-left: 2rem;
     padding-bottom: 1.5rem;
 }
 
 .button {
     background-color: $bs-black;
     color: $white;
+    font-size: 1.5rem;
+    line-height: 2rem;
     height: 3.5rem;
     border-radius: .3125rem;
-    width: calc(100%-1rem);
+    width: calc(100% - 4rem);
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 1rem auto;
+
+    @media (min-width: $bp-tablet-min) {
+        width: 25%;
+    }
 }
 
 
@@ -247,8 +309,11 @@ header {
     width: 100%;
     height: .0625rem;
     background-color: $mercury;
-    margin: 2rem 0;
-    padding: 2rem 0;
+    margin: 1rem 0;
+
+    @media (min-width: $bp-tablet-min) {
+        display:none;
+    }
 }
 
 
@@ -260,7 +325,12 @@ footer {
         padding: 2rem 1rem 1rem 1rem;
         display: flex;
         flex-direction: column;
-        margin-bottom: 2rem;
+        margin: 1.5rem 0 2rem 0;
+
+        @media (min-width: $bp-tablet-min) {
+            margin-top: 3rem;
+        }
+
     }
 
     .footer__wrapper {
