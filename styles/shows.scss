@@ -105,8 +105,17 @@ header {
     position: relative;
     display: flex;
     justify-content: flex-start;
-    //align-items: center;
     padding: 0 1rem;
+
+    @media (min-width:$bp-tablet-min) {
+        height: 50vh;
+    }
+
+    &__text-container {
+        @media (min-width: $bp-tablet-min) {
+            padding-left: 2rem;
+        }
+    }
 
     &__album {
         color: $white;
@@ -115,6 +124,13 @@ header {
         font-weight: 400;
         padding-left: 0.5rem;
         margin: 2.5rem 0;
+
+        @media (min-width: $bp-tablet-min) {
+            font-size: 2.25rem;
+            line-height: 2.75rem;
+            margin: 0;
+            padding: 4rem 0 2rem 0;
+        }
     }
 
     &__title {
@@ -131,12 +147,28 @@ header {
         @media (min-width: $bp-tablet-min) {
             font-size: 3.75rem;
             line-height: 4.25rem;
+            width: 80%;
+            padding: 2rem 0;
+            margin: 0;
         }
     }
 }
 
 .soundcloud-container {
     padding-left: 0.5rem;
+
+    @media (min-width: $bp-tablet-min) {
+        width: 65%;
+        padding-top: 2rem;
+        //height: 15rem;
+
+        // iframe {
+        //     height: 14rem;
+            
+        // }
+
+        
+    }
 }
 
 .shows {
@@ -145,7 +177,81 @@ header {
     font-size: 2.25rem;
     line-height: 2.75rem;
     margin: 2rem 0 2rem 1rem;
+
+    @media (min-width: $bp-tablet-min) {
+        padding-left: 2rem;
+        font-size: 2.75rem;
+        line-height: 3.25rem;
+    }
 }
+
+.show__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-family: AvenirDemi;
+    font-weight: 600;
+    color: $silver;
+    font-size: 1rem;
+    line-height: 1.375rem;
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.date-value {
+    font-family: AvenirDemi;
+    font-weight: 600;
+    color: $bs-black;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.venue-value {
+    font-family: AvenirRegular;
+    font-weight: 400;
+    color: $bs-darkblack;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.location-value {
+    font-family: AvenirRegular;
+    font-weight: 400;
+    color: $bs-darkblack;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.button {
+    background-color: $bs-black;
+    color: $white;
+    height: 3.5rem;
+    border-radius: .3125rem;
+    width: calc(100%-1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.divider {
+    width: 100%;
+    height: .0625rem;
+    background-color: $mercury;
+    margin: 2rem 0;
+    padding: 2rem 0;
+}
+
+
 
 footer {
     background: $bs-black;
