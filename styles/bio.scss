@@ -9,6 +9,8 @@
     box-sizing: border-box;
 }
 
+//I know I still need to make some tweaks to the header & footer
+//unfortunately ran out of time due to family obligations on the holiday weekend
 
 header {
     background: $bs-black;
@@ -437,7 +439,6 @@ footer {
             @media (min-width: $bp-tablet-min) {
                 display: none;
             }
-
         }
     }
 
@@ -566,8 +567,6 @@ button {
     }
 }
 
-
-
 .comments__form-wrapper {
     display: flex;
     width: 100%;
@@ -581,7 +580,6 @@ button {
         justify-content: center;
         margin-left: 0;
     }
-
 }
 
 .comments__form-picture {
@@ -593,7 +591,6 @@ button {
     @media (min-width: $bp-tablet-min){
         //padding-right: 2rem;
     }
-   
 }
 
 .comments__avatar {
@@ -621,12 +618,9 @@ button {
     }
 }
 
-
 #comments__form {
     width: 90%;
 }
-
-
 
 .comments__container {
     display: flex;
@@ -655,7 +649,6 @@ button {
     font-weight: 400;
 }
 
-
 .pic-placeholder {
     width:3rem;
     height: 3rem;
@@ -666,7 +659,6 @@ button {
     align-self: start;
     justify-content: center;
 }
-
 
 .individual-comment {
     display: flex;

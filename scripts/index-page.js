@@ -27,19 +27,11 @@ function renderComments() {
     commentsArray.forEach(comment => {
         displayComment(comment);
     });
-
-    //for (let i=0; i < commentsArray.length; i++) {
-        //displayComment(commentsArray[i]);
-        // const card = to the comments array[i]
-        // commentsContainer.appendChild()
-    //}
 }
 
 renderComments();
 
 
-
-// getting the form element and adding a listener for when someone submits a new comment
 
 const getForm = document.getElementById('comments__form');
 
@@ -49,20 +41,13 @@ getForm.addEventListener('submit', function(e) {
     const nameInput = document.getElementById('nameInput').value;
     const commentInput = document.getElementById('commentInput').value;
 
-    //console.log("Name: ", nameInput)
-    //console.log("Comment: ", commentInput)
-
     const newComment = {
         name: nameInput,
         timestamp: " ",
         text: commentInput
     };
 
-    // adding a new comment to the front/top of the commentsArray
-
     commentsArray.unshift(newComment);
-
-    // displayComment(newComment);
 
     renderComments();
 
@@ -91,24 +76,17 @@ function displayComment (myComment) {
     //const timestampElement = document.createElement('span');
     // timestampElement.textContent = myComment.timestamp
 
-
     const textElement = document.createElement('p');
     textElement.innerText = myComment.text;
-
-    
     
 
-    
     individualComment.appendChild(profilePic);
 
     textContainer.appendChild(nameElement);
+
     textContainer.appendChild(textElement);
 
     individualComment.appendChild(textContainer)
-
-    
-    //individualComment.appendChild(timestampElement);
-    
 
     commentsContainer.appendChild(individualComment);
 

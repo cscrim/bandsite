@@ -38,8 +38,6 @@ showsArray.forEach(show => {
     const showContainer = document.createElement('div');
     showContainer.classList.add('show__container');
 
-
-
     const dateBlock = document.createElement('div');
     dateBlock.classList.add('block');
 
@@ -54,8 +52,6 @@ showsArray.forEach(show => {
     dateBlock.appendChild(dateLabel);
     dateBlock.appendChild(dateValue);
 
-
-
     const venueBlock = document.createElement('div');
     venueBlock.classList.add('block');
 
@@ -69,7 +65,6 @@ showsArray.forEach(show => {
 
     venueBlock.appendChild(venueLabel);
     venueBlock.appendChild(venueValue);
-
 
     const locationBlock = document.createElement('div');
     locationBlock.classList.add('block');
@@ -89,19 +84,10 @@ showsArray.forEach(show => {
     button.classList.add('button');
     button.innerText = "BUY TICKETS";
 
-    
 
-
-
-    // showContainer.appendChild(dateLabel);
-    // showContainer.appendChild(dateValue);
-    // showContainer.appendChild(venueLabel);
-    // showContainer.appendChild(venueValue);
     showContainer.appendChild(dateBlock);
     showContainer.appendChild(venueBlock);
     showContainer.appendChild(locationBlock);
-    // showContainer.appendChild(locationLabel);
-    // showContainer.appendChild(locationValue);
     showContainer.appendChild(button);
 
 
@@ -112,6 +98,7 @@ showsArray.forEach(show => {
     getShows.appendChild(showContainer);
 
 
+    
     showContainer.addEventListener('click', () => {
         
         const allShows = document.querySelectorAll('.show__container');
