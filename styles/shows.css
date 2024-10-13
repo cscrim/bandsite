@@ -247,6 +247,12 @@ header .header-container .site-logo {
   display: flex;
   flex-direction: column;
 }
+.show__container:hover {
+  background-color: #FAFAFA;
+}
+.show__container.selected {
+  background-color: #E1E1E1;
+}
 @media (min-width: 768px) {
   .show__container {
     display: flex;

@@ -111,4 +111,14 @@ showsArray.forEach(show => {
 
     getShows.appendChild(showContainer);
 
+
+    showContainer.addEventListener('click', () => {
+        
+        const allShows = document.querySelectorAll('.show__container');
+        allShows.forEach(item => item.classList.remove('selected'));
+
+        showContainer.classList.add('selected');
+
+    });
+
 });

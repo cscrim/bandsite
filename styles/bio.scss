@@ -560,6 +560,10 @@ button {
     font-weight: 600;
     font-size: 1rem;
     //height: 2.5rem;
+
+    @media (min-width: $bp-tablet-min){
+        width: 30%;
+    }
 }
 
 
@@ -569,6 +573,15 @@ button {
     width: 100%;
     align-items: start;
 
+    @media (min-width: $bp-tablet-min){
+        margin-left: 4rem;
+    }
+
+    @media (min-width: $bp-desktop-min){
+        justify-content: center;
+        margin-left: 0;
+    }
+
 }
 
 .comments__form-picture {
@@ -576,6 +589,10 @@ button {
     width: 10%;
     align-items: flex-start;
     margin-left: 1rem;
+
+    @media (min-width: $bp-tablet-min){
+        //padding-right: 2rem;
+    }
    
 }
 
@@ -593,6 +610,15 @@ button {
     justify-content: flex-end;
     padding-left: 0;
     margin-left: -1.5rem;
+
+    @media (min-width: $bp-tablet-min){
+        margin-left: -6rem;
+    }
+
+    @media (min-width: $bp-desktop-min){
+        width: 55%;
+        margin-left: -8rem;
+    }
 }
 
 
@@ -605,6 +631,12 @@ button {
 .comments__container {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $bp-tablet-min){
+        //justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
 }
 
 .comments__container div {
@@ -642,6 +674,16 @@ button {
     padding: 0;
     border-bottom: 1px solid $mercury;
     align-items: flex-start;
+
+    @media (min-width: $bp-tablet-min){
+        width: 80%;
+        // justify-content: center;
+        // align-items: center;
+    }
+
+    @media (min-width: $bp-desktop-min) {
+        width: 60%;
+    }
 }
 
 .text-container {
