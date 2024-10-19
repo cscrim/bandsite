@@ -36,8 +36,11 @@ const getForm = document.getElementById('comments__form');
 getForm.addEventListener('submit', async function(e) {
     e.preventDefault();
 
-    const nameInput = document.getElementById('nameInput').value;
-    const commentInput = document.getElementById('commentInput').value;
+    // const nameInput = document.getElementById('nameInput').value;
+    // const commentInput = document.getElementById('commentInput').value;
+
+    const nameInput = e.target.nameInput.value;
+    const commentInput = e.target.commentInput.value;
 
     const newComment = {
         name: nameInput,
