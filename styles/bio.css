@@ -109,6 +109,16 @@ header .header-container .site-logo {
   align-items: center;
   padding: 0 1rem;
 }
+.hero-image::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #323232;
+  opacity: 0.5;
+}
 .hero-image__title {
   color: #FFFFFF;
   font-family: AvenirDemi;
@@ -117,6 +127,8 @@ header .header-container .site-logo {
   line-height: 2rem;
   padding-left: 0.5rem;
   letter-spacing: 0.0625rem;
+  position: relative;
+  z-index: 2;
 }
 @media (min-width: 768px) {
   .hero-image__title {

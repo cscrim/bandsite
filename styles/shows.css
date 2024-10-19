@@ -119,6 +119,20 @@ header .header-container .site-logo {
     background-position: center 20%;
   }
 }
+.hero-image::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #323232;
+  opacity: 0.5;
+}
+.hero-image__text-container {
+  position: relative;
+  z-index: 2;
+}
 @media (min-width: 768px) {
   .hero-image__text-container {
     padding-left: 2rem;

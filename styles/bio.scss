@@ -109,6 +109,17 @@ header {
     align-items: center;
     padding: 0 1rem;
 
+    &::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $bs-black;
+        opacity: 0.5;
+    }
+
     &__title {
         color: $white;
         font-family: AvenirDemi;
@@ -117,6 +128,8 @@ header {
         line-height: 2rem;
         padding-left: 0.5rem;
         letter-spacing: .0625rem;
+        position: relative;
+        z-index: 2;
 
         @media (min-width: $bp-tablet-min) {
             font-size: 3.75rem;

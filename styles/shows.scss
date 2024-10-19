@@ -116,7 +116,22 @@ header {
         background-position: center 20%;
     }
 
+    &::before {
+        content: ' ';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $bs-black;
+        opacity: 0.5;
+        
+    }
+
     &__text-container {
+
+        position: relative;
+        z-index: 2;
 
         @media (min-width: $bp-tablet-min) {
             padding-left: 2rem;
