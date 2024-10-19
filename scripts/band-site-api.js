@@ -36,7 +36,7 @@ class BandSiteApi {
 
     async getShows() {
         try {
-            const response = await axios.get(`${this.baseurl}/shows?api_key=${this.apiKey}`);
+            const response = await axios.get(`${this.baseurl}/showdates?api_key=${this.apiKey}`);
             return response.data;
         } catch (error) {
             console.log("there was an error getting shows", error);
