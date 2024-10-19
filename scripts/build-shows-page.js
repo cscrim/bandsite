@@ -24,7 +24,11 @@ function renderShows(showsArray) {
         const showContainer = document.createElement('div');
         showContainer.classList.add('show__container');
 
-        const dateValue = new Date(show.date).toLocaleDateString();
+        const dateValue = new Date(show.date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+        });
 
 
     
