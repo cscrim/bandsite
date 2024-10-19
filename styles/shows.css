@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "AvenirRegular";
+  font-family: "Avenir";
   src: url("../assets/fonts/AvenirNextLTPro-Regular.otf"), url("../assets/fonts/AvenirNextLTPro.ttf");
   font-weight: 400;
 }
 @font-face {
-  font-family: "AvenirBold";
+  font-family: "Avenir";
   src: url("../assets/fonts/AvenirNextLTPro-Demo.otf"), url("../assets/fonts/AvenirNextLTProBold.ttf");
   font-weight: 700;
 }
 @font-face {
-  font-family: "AvenirDemi";
+  font-family: "Avenir";
   src: url("../assets/fonts/AvenirNextLTPro-Demi"), url("../assets/fonts/AvenirNextLTProDemi.ttf");
   font-weight: 600;
 }
@@ -79,7 +79,7 @@ header .header-container .site-logo {
 .navbar__tab a {
   color: #FFFFFF;
   text-decoration: none;
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-weight: 600;
   width: 100%;
   height: 100%;
@@ -93,7 +93,7 @@ header .header-container .site-logo {
 .navbar__link {
   color: #FFFFFF;
   text-decoration: none;
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
 }
 
@@ -140,7 +140,7 @@ header .header-container .site-logo {
 }
 .hero-image__album {
   color: #FFFFFF;
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-size: 1.5rem;
   font-weight: 400;
   padding-left: 0.5rem;
@@ -161,13 +161,13 @@ header .header-container .site-logo {
     padding-bottom: 0;
     font-size: 1.5rem;
     line-height: 2rem;
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
   }
 }
 .hero-image__title {
   color: #FFFFFF;
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   font-size: 2rem;
   line-height: 2rem;
@@ -230,7 +230,7 @@ header .header-container .site-logo {
 }
 
 .shows {
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   font-size: 2.25rem;
   line-height: 2.75rem;
@@ -295,7 +295,7 @@ header .header-container .site-logo {
 }
 
 .label {
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   color: #AFAFAF;
   font-size: 1rem;
@@ -323,7 +323,7 @@ header .header-container .site-logo {
 }
 
 .date-value {
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   color: #323232;
   font-size: 1.125rem;
@@ -333,7 +333,7 @@ header .header-container .site-logo {
 }
 
 .venue-value {
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-weight: 400;
   color: #000000;
   font-size: 1.125rem;
@@ -348,7 +348,7 @@ header .header-container .site-logo {
 }
 
 .location-value {
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-weight: 400;
   color: #000000;
   font-size: 1.125rem;
@@ -440,7 +440,7 @@ footer .footer__wrapper {
 }
 footer .footer-title {
   color: #FFFFFF;
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -496,7 +496,7 @@ footer .contact__mgmt,
 footer .contact__booking-LAG,
 footer .contact__booking-ARCH {
   color: #FFFFFF;
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.125rem;
@@ -525,7 +525,7 @@ footer .copyright-container .copyright-logo {
 }
 footer .copyright-text {
   color: #FFFFFF;
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.125rem;

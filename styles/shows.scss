@@ -74,7 +74,7 @@ header {
         a {
             color: $white;
             text-decoration: none;
-            font-family: AvenirRegular;
+            font-family: Avenir;
             font-weight: 600;
             width: 100%;
             height: 100%;
@@ -91,7 +91,7 @@ header {
     &__link {
         color: $white;
         text-decoration: none;
-        font-family: AvenirDemi;
+        font-family: Avenir;
         font-weight: 600;
     }
 }
@@ -138,13 +138,13 @@ header {
         }
 
         @media (min-width: $bp-desktop-min) {
-            //text-align: center;
+            
         }
     }
 
     &__album {
         color: $white;
-        font-family: AvenirRegular;
+        font-family: Avenir;
         font-size: 1.5rem;
         font-weight: 400;
         padding-left: 0.5rem;
@@ -163,14 +163,14 @@ header {
             padding-bottom: 0;
             font-size: 1.5rem;
             line-height: 2rem;
-            font-family: AvenirDemi;
+            font-family: Avenir;
             font-weight: 600;
         }
     }
 
     &__title {
         color: $white;
-        font-family: AvenirDemi;
+        font-family: Avenir;
         font-weight: 600;
         font-size: 2rem;
         line-height: 2rem;
@@ -230,7 +230,7 @@ header {
 }
 
 .shows {
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
     font-size: 2.25rem;
     line-height: 2.75rem;
@@ -293,7 +293,7 @@ header {
 }
 
 .label {
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
     color: $silver;
     font-size: 1rem;
@@ -321,7 +321,7 @@ header {
 }
 
 .date-value {
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
     color: $bs-black;
     font-size: 1.125rem;
@@ -331,7 +331,7 @@ header {
 }
 
 .venue-value {
-    font-family: AvenirRegular;
+    font-family: Avenir;
     font-weight: 400;
     color: $bs-darkblack;
     font-size: 1.125rem;
@@ -345,7 +345,7 @@ header {
 }
 
 .location-value {
-    font-family: AvenirRegular;
+    font-family: Avenir;
     font-weight: 400;
     color: $bs-darkblack;
     font-size: 1.125rem;
@@ -436,7 +436,7 @@ footer {
 
     .footer-title {
         color: $white;
-        font-family: AvenirDemi;
+        font-family: Avenir;
         font-weight: 600;
         font-size: 1.5rem;
         line-height: 2rem;
@@ -491,7 +491,7 @@ footer {
     .contact__booking-LAG,
     .contact__booking-ARCH {
         color: $white;
-        font-family: AvenirRegular;
+        font-family: Avenir;
         font-weight: 400;
         font-size: .8125rem;
         line-height: 1.125rem;
@@ -522,7 +522,7 @@ footer {
 
     .copyright-text {
         color: $white;
-        font-family: AvenirRegular;
+        font-family: Avenir;
         font-weight: 400;
         font-size: .8125rem;
         line-height: 1.125rem;

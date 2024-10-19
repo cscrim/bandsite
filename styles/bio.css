@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "AvenirRegular";
+  font-family: "Avenir";
   src: url("../assets/fonts/AvenirNextLTPro-Regular.otf"), url("../assets/fonts/AvenirNextLTPro.ttf");
   font-weight: 400;
 }
 @font-face {
-  font-family: "AvenirBold";
+  font-family: "Avenir";
   src: url("../assets/fonts/AvenirNextLTPro-Demo.otf"), url("../assets/fonts/AvenirNextLTProBold.ttf");
   font-weight: 700;
 }
 @font-face {
-  font-family: "AvenirDemi";
+  font-family: "Avenir";
   src: url("../assets/fonts/AvenirNextLTPro-Demi"), url("../assets/fonts/AvenirNextLTProDemi.ttf");
   font-weight: 600;
 }
@@ -79,7 +79,7 @@ header .header-container .site-logo {
 .navbar__tab a {
   color: #FFFFFF;
   text-decoration: none;
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-weight: 600;
   width: 100%;
   height: 100%;
@@ -93,7 +93,7 @@ header .header-container .site-logo {
 .navbar__link {
   color: #FFFFFF;
   text-decoration: none;
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
 }
 
@@ -121,7 +121,7 @@ header .header-container .site-logo {
 }
 .hero-image__title {
   color: #FFFFFF;
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   font-size: 2rem;
   line-height: 2rem;
@@ -147,7 +147,7 @@ header .header-container .site-logo {
 }
 
 .about__title {
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   color: #323232;
   font-size: 1.5rem;
@@ -188,7 +188,7 @@ header .header-container .site-logo {
 }
 
 .about__quote-container p {
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   color: #323232;
   font-size: 0.875rem;
@@ -229,7 +229,7 @@ header .header-container .site-logo {
 }
 
 .article-title {
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   font-size: 0.875rem;
   line-height: 1.375rem;
@@ -275,7 +275,7 @@ header .header-container .site-logo {
 
 .paragraph1, .paragraph2 {
   margin-bottom: 1rem;
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-weight: 400;
 }
 @media (min-width: 768px) {
@@ -299,7 +299,7 @@ header .header-container .site-logo {
 }
 
 .gallery__title {
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -377,7 +377,7 @@ footer .footer__wrapper {
 }
 footer .footer-title {
   color: #FFFFFF;
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -433,7 +433,7 @@ footer .contact__mgmt,
 footer .contact__booking-LAG,
 footer .contact__booking-ARCH {
   color: #FFFFFF;
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.125rem;
@@ -462,7 +462,7 @@ footer .copyright-container .copyright-logo {
 }
 footer .copyright-text {
   color: #FFFFFF;
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.125rem;
@@ -496,7 +496,7 @@ footer .copyright-text {
 }
 
 .comments__title {
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 2rem;
@@ -538,7 +538,7 @@ footer .copyright-text {
 }
 
 .comments__form-container label {
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   font-size: 0.8125rem;
   color: #AFAFAF;
@@ -551,7 +551,7 @@ footer .copyright-text {
 
 .comments__form-container input {
   height: 2.5rem;
-  font-family: AvenirRegular;
+  font-family: Avenir;
   background-color: #FAFAFA;
   padding-left: 0.5rem;
   color: #323232;
@@ -562,7 +562,7 @@ footer .copyright-text {
 
 .comments__form-container #commentInput {
   height: 7rem;
-  font-family: AvenirRegular;
+  font-family: Avenir;
   padding-top: 0.5rem;
   padding-left: 0.5rem;
   background-color: #FAFAFA;
@@ -578,7 +578,7 @@ button {
   padding: 0.75rem 0;
   border-radius: 0.3125rem;
   margin-left: auto;
-  font-family: AvenirDemi;
+  font-family: Avenir;
   font-weight: 600;
   font-size: 1rem;
 }
@@ -661,12 +661,12 @@ button {
 
 .comments__container span {
   font-weight: 600;
-  font-family: AvenirDemi;
+  font-family: Avenir;
   color: #323232;
 }
 
 .comments__container p {
-  font-family: AvenirRegular;
+  font-family: Avenir;
   font-weight: 400;
 }
 

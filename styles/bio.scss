@@ -75,7 +75,7 @@ header {
         a {
             color: $white;
             text-decoration: none;
-            font-family: AvenirRegular;
+            font-family: Avenir;
             font-weight: 600;
             width: 100%;
             height: 100%;
@@ -92,7 +92,7 @@ header {
     &__link {
         color: $white;
         text-decoration: none;
-        font-family: AvenirDemi;
+        font-family: Avenir;
         font-weight: 600;
     }
 }
@@ -122,7 +122,7 @@ header {
 
     &__title {
         color: $white;
-        font-family: AvenirDemi;
+        font-family: Avenir;
         font-weight: 600;
         font-size: 2rem;
         line-height: 2rem;
@@ -147,7 +147,7 @@ header {
 }
 
 .about__title {
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
     color: $bs-black;
     font-size: 1.5rem;
@@ -185,7 +185,7 @@ header {
 }
 
 .about__quote-container p {
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
     color: $bs-black;
     font-size: .875rem;
@@ -224,7 +224,7 @@ header {
 }
 
 .article-title  {
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
     font-size: .875rem;
     line-height: 1.375rem;
@@ -271,7 +271,7 @@ header {
 
 .paragraph1, .paragraph2 {
     margin-bottom: 1rem;
-    font-family: AvenirRegular;
+    font-family: Avenir;
     font-weight: 400;
 
     @media (min-width: $bp-tablet-min) {
@@ -294,7 +294,7 @@ header {
 }
 
 .gallery__title {
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -372,7 +372,7 @@ footer {
 
     .footer-title {
         color: $white;
-        font-family: AvenirDemi;
+        font-family: Avenir;
         font-weight: 600;
         font-size: 1.5rem;
         line-height: 2rem;
@@ -427,7 +427,7 @@ footer {
     .contact__booking-LAG,
     .contact__booking-ARCH {
         color: $white;
-        font-family: AvenirRegular;
+        font-family: Avenir;
         font-weight: 400;
         font-size: .8125rem;
         line-height: 1.125rem;
@@ -457,7 +457,7 @@ footer {
 
     .copyright-text {
         color: $white;
-        font-family: AvenirRegular;
+        font-family: Avenir;
         font-weight: 400;
         font-size: .8125rem;
         line-height: 1.125rem;
@@ -488,7 +488,7 @@ footer {
 }
 
 .comments__title {
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -528,7 +528,7 @@ footer {
 }
 
 .comments__form-container label {
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
     font-size: .8125rem;
     color: $silver;
@@ -542,7 +542,7 @@ footer {
 
 .comments__form-container input {
     height: 2.5rem;
-    font-family: AvenirRegular;
+    font-family: Avenir;
     background-color: $alabaster;
     padding-left: 0.5rem;
     color: $bs-black;
@@ -554,7 +554,7 @@ footer {
 
 .comments__form-container #commentInput {
     height: 7rem;
-    font-family: AvenirRegular;
+    font-family: Avenir;
     padding-top: 0.5rem;
     padding-left: 0.5rem;
     background-color: $alabaster;
@@ -570,10 +570,9 @@ button {
     padding: 0.75rem 0;
     border-radius: .3125rem;
     margin-left: auto;
-    font-family: AvenirDemi;
+    font-family: Avenir;
     font-weight: 600;
     font-size: 1rem;
-    //height: 2.5rem;
 
     @media (min-width: $bp-tablet-min){
         width: 30%;
@@ -640,7 +639,6 @@ button {
     flex-direction: column;
 
     @media (min-width: $bp-tablet-min){
-        //justify-content: center;
         align-items: center;
         margin-bottom: 2rem;
     }
@@ -653,12 +651,12 @@ button {
 
 .comments__container span {
     font-weight: 600;
-    font-family: AvenirDemi;
+    font-family: Avenir;
     color: $bs-black;
 }
 
 .comments__container p {
-    font-family: AvenirRegular;
+    font-family: Avenir;
     font-weight: 400;
 }
 
@@ -682,8 +680,6 @@ button {
 
     @media (min-width: $bp-tablet-min){
         width: 80%;
-        // justify-content: center;
-        // align-items: center;
     }
 
     @media (min-width: $bp-desktop-min) {
@@ -696,7 +692,6 @@ button {
     flex-direction: column;
     padding-top: 2rem;
     margin-bottom: 0;
-    //margin-left: 2rem;
     width: 80%;
 }
 
