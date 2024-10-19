@@ -88,12 +88,6 @@ getForm.addEventListener('submit', async function(e) {
 
     getForm.reset();
 
-    // commentsArray.unshift(newComment);
-
-    // renderComments();
-
-    // getForm.reset();
-
 });
 
 

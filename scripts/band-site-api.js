@@ -11,7 +11,7 @@ class BandSiteApi {
         try {
             const response = await axios.post(`${this.baseurl}/comments?api_key=${this.apiKey}`, {
                 name: comment.name,
-                comment: comment.text
+                comment: comment.comment
             });
             return response.data;
 
@@ -26,7 +26,7 @@ class BandSiteApi {
 
             const comments = response.data;
 
-            comments.sort((a,b) => new Date(b.date) - new Date(a.date));
+            comments.sort((a,b) => b.timestamp - a.timestamp);
             return comments;
 
         } catch (error) {
