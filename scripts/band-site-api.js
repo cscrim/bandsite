@@ -43,6 +43,35 @@ class BandSiteApi {
         }
 
     }
+
+//     async likeComment(commentId) {
+//         const response = await fetch(`/comments/${commentId}/like`, {
+//             method: 'PUT',
+//         });
+
+//         // const updatedComment = await response.json();
+//         // return updatedComment;
+//         return await response.json();
+//     }
+
+    async likeComment(commentId) {
+        const response = await fetch(`${this.baseurl}/comments/${commentId}/like?api_key=${apiKey}`, {
+            method: 'PUT',
+        });
+
+        // Log the response status
+        console.log('Response Status:', response.status);
+
+        // If the response is not OK, throw an error
+        if (!response.ok) {
+            const errorText = await response.text(); // Get the error response text
+            console.error('Error response:', errorText); // Log the error text for debugging
+            throw new Error(`Failed to like comment: ${response.status} - ${errorText}`);
+        }
+
+        // If the response is OK, parse it as JSON
+        return await response.json();
+    }
 }
 
 

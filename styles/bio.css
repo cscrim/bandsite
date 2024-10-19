@@ -600,6 +600,7 @@ button {
   align-items: flex-start;
   margin-left: 1rem;
 }
+
 .comments__avatar {
   width: 3rem;
   height: 3rem;
@@ -700,4 +701,15 @@ button {
   display: flex;
   justify-content: space-between;
   padding-left: 0 !important;
+}
+
+.like-button {
+  width: 3rem;
+  height: 2rem;
+  margin-right: 1rem;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }/*# sourceMappingURL=bio.css.map */

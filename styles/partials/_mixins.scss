@@ -1,3 +1,5 @@
+@use '../partials/breakpoints.scss' as *;
+
 @mixin tablet {
     @media (min-width: $bp-tablet-min) {
         @content;
@@ -9,3 +11,4 @@
         @content;
     }
 }
+

@@ -63,6 +63,8 @@ function displayComment (myComment) {
     const individualComment = document.createElement('div');
     individualComment.classList.add('individual-comment');
 
+    individualComment.setAttribute('data-id', myComment.id);
+
     const profilePic = document.createElement('div');
     profilePic.classList.add("pic-placeholder");
     
@@ -78,7 +80,6 @@ function displayComment (myComment) {
     const nameElement = document.createElement('span');
     nameElement.innerText = myComment.name;
 
-    
 
     const timestampElement = document.createElement('span');
     
@@ -100,23 +101,46 @@ function displayComment (myComment) {
     const textElement = document.createElement('p');
     textElement.innerText = myComment.comment;
 
+    const likeButton = document.createElement('button');
+    likeButton.classList.add('like-button');
+    likeButton.innerText = 'Like';
+
+    const likeCount = document.createElement('span');
+    likeCount.classList.add('like-count');
+    likeCount.innerText = myComment.likes || 0;
+
+
+
     textContainer.appendChild(nameTimeContainer);
     textContainer.appendChild(textElement);
-    
-
-    // textContainer.appendChild(nameElement);
-
-    // textContainer.appendChild(textElement);
-
-    // textContainer.appendChild(timestampElement);
 
     individualComment.appendChild(profilePic);
 
     individualComment.appendChild(textContainer)
 
+    individualComment.appendChild(likeButton);
+    individualComment.appendChild(likeCount);
+
     commentsContainer.appendChild(individualComment);
 
 }
+
+
+document.addEventListener('click', async(e) => {
+    if (e.target.classList.contains('like-button')) {
+        const commentElement = e.target.closest('.individual-comment');
+        const commentId = commentElement.getAttribute('data-id');
+
+        try {
+            const updatedComment = await bandApi.likeComment(commentId);
+            const likeCount = commentElement.querySelector('.like-count');
+            likeCount.textContent = updatedComment.likes;
+        } catch (error) {
+            console.log("Error liking comment", error);
+        }
+    }
+});
+
 
 document.addEventListener('DOMContentLoaded', loadComments);
 
