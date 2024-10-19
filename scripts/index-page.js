@@ -41,7 +41,6 @@ getForm.addEventListener('submit', async function(e) {
 
     const newComment = {
         name: nameInput,
-        // timestamp: " ",
         comment: commentInput
     };
 
@@ -71,11 +70,15 @@ function displayComment (myComment) {
     const textContainer = document.createElement('div');
     textContainer.classList.add("text-container");
 
+
+    const nameTimeContainer = document.createElement('div');
+    nameTimeContainer.classList.add('name-time-container');
+
+
     const nameElement = document.createElement('span');
     nameElement.innerText = myComment.name;
 
-    const textElement = document.createElement('p');
-    textElement.innerText = myComment.comment;
+    
 
     const timestampElement = document.createElement('span');
     
@@ -91,14 +94,21 @@ function displayComment (myComment) {
     timestampElement.textContent = formattedStamp;
     
 
+    nameTimeContainer.appendChild(nameElement);
+    nameTimeContainer.appendChild(timestampElement);
 
+    const textElement = document.createElement('p');
+    textElement.innerText = myComment.comment;
+
+    textContainer.appendChild(nameTimeContainer);
+    textContainer.appendChild(textElement);
     
 
-    textContainer.appendChild(nameElement);
+    // textContainer.appendChild(nameElement);
 
-    textContainer.appendChild(textElement);
+    // textContainer.appendChild(textElement);
 
-    textContainer.appendChild(timestampElement);
+    // textContainer.appendChild(timestampElement);
 
     individualComment.appendChild(profilePic);
 
