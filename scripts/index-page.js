@@ -74,18 +74,33 @@ function displayComment (myComment) {
     const nameElement = document.createElement('span');
     nameElement.innerText = myComment.name;
 
-    //const timestampElement = document.createElement('span');
-    // timestampElement.textContent = myComment.timestamp
-
     const textElement = document.createElement('p');
     textElement.innerText = myComment.comment;
+
+    const timestampElement = document.createElement('span');
+    
+    const formattedStamp = new Date(myComment.timestamp).toLocaleString('en-US', {
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: true
+    });
+
+    timestampElement.textContent = formattedStamp;
     
 
-    individualComment.appendChild(profilePic);
+
+    
 
     textContainer.appendChild(nameElement);
 
     textContainer.appendChild(textElement);
+
+    textContainer.appendChild(timestampElement);
+
+    individualComment.appendChild(profilePic);
 
     individualComment.appendChild(textContainer)
 
